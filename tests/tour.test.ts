@@ -5,6 +5,7 @@ import { ACTORS, ACTOR_IDS } from '../src/model/cast';
 import { buildSchedule, sample } from '../src/model/choreography';
 import { getTours, resolveShot, shotStart, tourFrame } from '../src/model/tour';
 import { DISCLOSURE } from '../src/mode';
+import config from '../office.config';
 
 const S = buildSchedule();
 const T = getTours(S);
@@ -87,7 +88,7 @@ describe('honesty of the presentation text', () => {
   it('the staged scenes say that they are staged', () => {
     for (const tour of [T.full, T.short]) for (const id of ['gather', 'meeting']) {
       const s = tour.shots.find((x) => x.id === id)!;
-      expect(`${s.title} ${s.sub}`).toMatch(/staged/i);
+      expect(`${s.title} ${s.sub}`, 'the meeting captions must say the scene is staged (office.config.ts → captions)').toMatch(/staged|scripted|illustrative|simulated/i);
     }
   });
   it('role captions use the approved role titles and call them AI roles', () => {
@@ -96,7 +97,7 @@ describe('honesty of the presentation text', () => {
       expect(s.sub).toBe(ACTORS[id].display.replace(/ · AI$/, '') + ' · AI role');
     }
   });
-  it('the one disclosure line is the agreed wording', () => {
-    expect(DISCLOSURE).toBe('Concept visualisation — simulated activity');
+  it('the disclosure line shown on screen is the one in office.config.ts', () => {
+    expect(DISCLOSURE).toBe(config.disclosure.en);
   });
 });

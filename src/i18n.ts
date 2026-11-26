@@ -1,10 +1,12 @@
 // Language: chosen once at page load (?lang=en|ar, else the config default). English and Arabic only.
+// Unit tests (no browser) always run in English; tests/config.test.ts and tools/check-browser.mjs cover Arabic.
 import config, { type Lang, type RoleSlot, type Text } from '../office.config';
 
 const q = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search);
 const asked = q.get('lang');
 
-export const LANG: Lang = asked === 'ar' || asked === 'en' ? asked : config.language.default;
+export const LANG: Lang = typeof window === 'undefined' ? 'en'
+  : asked === 'ar' || asked === 'en' ? asked : config.language.default;
 export const RTL = LANG === 'ar';
 
 /** The current-language version of a config text. */

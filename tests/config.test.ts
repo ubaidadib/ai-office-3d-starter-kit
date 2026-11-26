@@ -61,6 +61,12 @@ describe('office.config.ts', () => {
     }
   });
 
+  it('the meeting captions say, in both languages, that the scene is staged', () => {
+    const c = config.captions;
+    expect(`${c.teamMeetingSub.en} ${c.meetingSub.en}`).toMatch(/staged|scripted|illustrative|simulated/i);
+    expect(`${c.teamMeetingSub.ar} ${c.meetingSub.ar}`).toMatch(/مسبق|مُعدّ|معد|محاكا|توضيحي/);
+  });
+
   it('keeps an honest disclosure in both languages', () => {
     expect(config.disclosure.en).toMatch(/concept|simulat|illustrat|staged/i);
     expect(config.disclosure.ar).toMatch(/مفاهيمي|محاكا|مُحاكى|محاكى|توضيحي/);

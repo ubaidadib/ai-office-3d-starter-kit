@@ -101,7 +101,7 @@ all of which have free plans). Check the host's terms for commercial use.
 
 | Command | What it checks |
 | --- | --- |
-| `npm run check` | Type check and 96 unit tests: floor plan, paths, seating, choreography, tours, and your config |
+| `npm run check` | Type check and 97 unit tests: floor plan, paths, seating, choreography, tours, and your config |
 | `npm run build && npm run check:browser` | Opens the built site in a headless Chrome in English, Arabic and a vertical frame (37 checks) and saves screenshots to `check-output/` |
 
 ## How it is built

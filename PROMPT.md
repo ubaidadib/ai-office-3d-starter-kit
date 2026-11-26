@@ -30,7 +30,7 @@ Rules:
 Steps:
 1. Read README.md and office.config.ts so you understand what can be changed.
 2. Ask me, in one short message, for:
-   a) my company name (and Arabic name if different),
+   a) my company name (and Arabic name if different), and the subtitle under it, shown on the badge and the closing card (default "AI Office HQ"),
    b) my two brand colours (a dark primary colour and a highlight/accent colour) as hex codes, or my website so you can suggest them,
    c) my logo files (a light version of the full logo, and a square mark), or say "keep the placeholder",
    d) the four AI roles I want to show (a title and a short 1–2 word label for each), or say "keep the defaults",
@@ -49,7 +49,7 @@ Steps:
    cut off or hard to read. If you cannot, and Chrome is installed, run `npm run build && npm run check:browser`
    and look at the screenshots it saves in check-output/.
 6. Finish with a short summary of what you changed, and the recording address:
-   http://127.0.0.1:5173/?lang=<my language>&autoplay=short&clean=1  (add &frame=9x16 for a vertical video).
+   http://127.0.0.1:5173/?lang=<default language>&autoplay=short&clean=1  (add &frame=9x16 for a vertical video).
 ```
 
 ---
@@ -73,9 +73,9 @@ Steps:
   المجموعة أصلًا.)
 
 الخطوات:
-1. اقرأ README.md وoffice.config.ts لتفهم ما يمكن تغييره.
+1. اقرأ README.ar.md (أو README.md) وoffice.config.ts لتفهم ما يمكن تغييره.
 2. اطلب مني في رسالة واحدة قصيرة:
-   أ) اسم شركتي (والاسم بالإنجليزية إن كان مختلفًا)،
+   أ) اسم شركتي (والاسم بالإنجليزية إن كان مختلفًا)، والعنوان الفرعي الذي يظهر تحته في الشارة والبطاقة الختامية (الافتراضي «مقرّ فريق الذكاء الاصطناعي»)،
    ب) لوني هويتي (لون أساسي داكن ولون إبراز accent) بصيغة hex، أو رابط موقعي لتقترحهما،
    ج) ملفات شعاري (نسخة فاتحة من الشعار الكامل، ورمز مربع)، أو عبارة «أبقِ الشعار المؤقت»،
    د) الأدوار الأربعة بالذكاء الاصطناعي التي أريد عرضها (مسمّى واسم مختصر من كلمة أو كلمتين لكل دور)، أو عبارة «أبقِ الأدوار الافتراضية»،
@@ -94,7 +94,7 @@ Steps:
    مقطوعًا أو صعب القراءة. وإن لم يكن ذلك ممكنًا وكان Chrome مثبّتًا، فشغّل `npm run build && npm run check:browser`
    وافحص لقطات الشاشة التي يحفظها في المجلد check-output/.
 6. اختم بملخص قصير لما غيّرته، وبعنوان التسجيل:
-   http://127.0.0.1:5173/?lang=<لغتي>&autoplay=short&clean=1  (أضف &frame=9x16 لفيديو عمودي).
+   http://127.0.0.1:5173/?lang=<اللغة الافتراضية>&autoplay=short&clean=1  (أضف &frame=9x16 لفيديو عمودي).
 ```
 
 </div>

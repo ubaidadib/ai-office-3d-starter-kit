@@ -17,8 +17,8 @@ Talk to the user in the language they write in (English or Arabic). Keep it shor
 ## Steps
 
 1. Read `office.config.ts` (its comments explain every field) and the "Make it yours" section of `README.md`.
-2. Ask in **one** message for: company name; two brand colours (dark `primary`, highlight `accent`, hex) or their website to suggest them; logo files (a light full logo and a square mark) or "keep the placeholder"; the four AI role titles or "keep the defaults"; room names to change; default language.
-3. Apply the answers:
+2. Ask in **one** message for: company name and its subtitle (`company.headquarters`, shown on the badge and closing card); two brand colours (dark `primary`, highlight `accent`, hex) or their website to suggest them; logo files (a light full logo and a square mark) or "keep the placeholder"; the four AI role titles or "keep the defaults"; room names to change; default language.
+3. Apply the answers (if they keep the placeholder logo, tell them its colours are fixed and the closing card will show "YOUR LOGO" until they add their own):
    - `company.name`, `company.headquarters` (both languages).
    - `brand.primary` must be dark enough for white text; `brand.accent` should contrast with it.
    - Logo: copy the files into `public/brand/` and set `brand.logo` / `brand.mark` to `/brand/<file>`. The full logo must be a light version (it sits on `primary`). PNG with transparency at least 600 px tall, or SVG with `width` and `height`. If they only have a dark logo, say so and ask for a light one (or offer to keep the placeholder).

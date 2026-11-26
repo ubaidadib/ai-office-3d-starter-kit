@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----------------------------------------------------------------------------
-Third-party files in this repository keep their own licences:
-  public/vendor/   3D models by Kenney, CC0 1.0 (public domain) — see THIRD-PARTY-ASSETS.md
-  public/brand/fonts/   Inter and Cairo fonts, SIL Open Font License 1.1 — see the *-OFL.txt files beside them

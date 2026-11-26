@@ -25,9 +25,9 @@ Please keep it, and don't describe the video as live, real-time or "our AI emplo
 
 ## What you need
 
-- **Node.js 20.19 or newer** (https://nodejs.org)
+- **Node.js 20.19+ or 22.12+** (Node 24 LTS recommended; https://nodejs.org)
 - **Google Chrome** (or Chromium) to view and record it
-- About 250 MB of disk space after installing
+- About 150 MB of disk space after installing
 - No accounts, API keys or paid services
 
 ## Start in two commands
@@ -50,7 +50,9 @@ In Claude Code you can also type `/customize-ai-office`.
 ### By hand
 
 1. Open `office.config.ts`. Every visible text has an `en` and an `ar` version.
-2. Change the company name, the two brand colours, the four role titles and the room names.
+2. Change the company name, the two brand colours, the four role titles (and their short labels) and the room names.
+   Each role slot has its own rooms, so rename them with the role: `coo` → `coo_office`; `marketing` → `marketing_office`,
+   `marketing_studio`; `admissions` → `admissions_office`, `admissions_library`; `bizdev` → `bizdev_office`, `bizdev_pipeline`.
 3. Put your logo files in `public/brand/` and point `brand.logo` and `brand.mark` at them:
    - **logo**: a *light* version (it sits on your dark primary colour), transparent PNG at least 600 px tall, or an SVG with `width` and `height` set.
    - **mark**: a square icon, used for the corner badge, the welcome mat and the browser tab.

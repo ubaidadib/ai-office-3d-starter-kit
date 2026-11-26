@@ -19,7 +19,7 @@ export const roleChip = (id: RoleSlot) => `${t(config.roles[id].short)} · ${t(c
 /** Interface wording (not company-specific, so it lives here rather than in office.config.ts). */
 const UI = {
   tour: { en: '▶ Tour', ar: '▶ جولة' },
-  shortCut: { en: '▶ Short cut', ar: '▶ جولة قصيرة' },
+  shortCut: { en: '▶ Short tour', ar: '▶ جولة قصيرة' },
   movementOn: { en: '❚❚ Movement', ar: '❚❚ الحركة' },
   movementOff: { en: '▶ Movement', ar: '▶ الحركة' },
   goToRoom: { en: 'Go to room…', ar: 'انتقل إلى غرفة…' },
@@ -29,12 +29,12 @@ const UI = {
   exit: { en: '✕ Exit', ar: '✕ خروج' },
   labels: { en: 'Labels', ar: 'التسميات' },
   fullTour: { en: 'Full tour', ar: 'الجولة الكاملة' },
-  shortTour: { en: 'Short cut', ar: 'الجولة القصيرة' },
+  shortTour: { en: 'Short tour', ar: 'الجولة القصيرة' },
   seconds: { en: 's', ar: 'ث' },
   otherLanguage: { en: 'العربية', ar: 'English' },
   controls: { en: 'Presentation controls', ar: 'أدوات العرض' },
   tipTour: { en: 'Start the full guided tour (T)', ar: 'ابدأ الجولة الكاملة (T)' },
-  tipShort: { en: 'Start the short cut (Shift+T)', ar: 'ابدأ الجولة القصيرة (Shift+T)' },
+  tipShort: { en: 'Start the short tour (Shift+T)', ar: 'ابدأ الجولة القصيرة (Shift+T)' },
   tipMovement: { en: 'Pause / resume the staged movement (Space)', ar: 'إيقاف الحركة أو متابعتها (مسافة)' },
   tipOverview: { en: 'Overview (H)', ar: 'المنظر العام (H)' },
   tipPause: { en: 'Pause / resume (Space)', ar: 'إيقاف مؤقت أو متابعة (مسافة)' },

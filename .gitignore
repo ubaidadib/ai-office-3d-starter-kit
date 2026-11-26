@@ -1,0 +1,6 @@
+node_modules/
+dist/
+check-output/
+.DS_Store
+*.pyc
+__pycache__/

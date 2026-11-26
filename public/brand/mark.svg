@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- Placeholder mark. Replace with your own square logo mark. -->
+  <rect width="256" height="256" rx="56" fill="#0B1530"/>
+  <rect x="28" y="28" width="200" height="200" rx="40" fill="none" stroke="#D4AF37" stroke-width="12"/>
+  <path d="M78 182 L128 74 L178 182 M97 144 H159" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "name": "ai-office-3d-starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A bilingual (English/Arabic) 3D concept visualisation of an AI-team office: four staged role figures, a team meeting scene and guided camera tours. Customise it from one config file.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "tsc --noEmit && vitest run",
+    "check:browser": "node tools/check-browser.mjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0",
+    "zustand": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.187.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vitest": "4.1.12"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  }
+}

@@ -1,0 +1,106 @@
+/* Presentation-mode styling. Colours come from office.config.ts (set as --brand-primary and --brand-accent at start-up).
+   Fonts are bundled locally (public/brand/fonts): Inter for English, Cairo for Arabic. Nothing is loaded from the internet.
+   Layout uses logical properties (inset-inline-start and so on), so Arabic mirrors the interface automatically. */
+@font-face{font-family:"Inter";src:url("/brand/fonts/Inter.ttf") format("truetype");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Cairo";src:url("/brand/fonts/Cairo.ttf") format("truetype");font-weight:200 1000;font-display:swap}
+:root{
+  --brand-primary:#0B1530; --brand-accent:#D4AF37;
+  --navy:var(--brand-primary); --gold:var(--brand-accent);
+  --navy-a86:color-mix(in srgb, var(--navy) 86%, transparent);
+  --navy-a78:color-mix(in srgb, var(--navy) 78%, transparent);
+  --navy-a70:color-mix(in srgb, var(--navy) 70%, transparent);
+  --shade:color-mix(in srgb, var(--navy) 55%, #000);
+  --font:"Inter","Cairo",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+html[lang="ar"]{--font:"Cairo","Inter",-apple-system,"Segoe UI",Tahoma,Arial,sans-serif}
+
+.viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#05080f}
+.viewport .app{position:relative;width:100%;height:100%;overflow:hidden}
+.viewport.dev{background:#cdd6e1}
+
+/* Presentation backdrop: the building sits on a deep field of the primary colour with a soft pool of light under it. */
+.viewport.present .app{font-family:var(--font);background:radial-gradient(ellipse 62% 54% at 50% 54%,
+  color-mix(in srgb, var(--navy) 70%, #fff 18%) 0%, color-mix(in srgb, var(--navy) 88%, #fff 8%) 38%, var(--navy) 72%, var(--shade) 100%)}
+html.p-idle .viewport.present .app canvas{cursor:none}
+
+/* Soft edges so the badge, the disclosure and the caption stay readable over any part of the scene */
+.viewport.present .app::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:
+  linear-gradient(to top, color-mix(in srgb, var(--shade) 78%, transparent) 0%, color-mix(in srgb, var(--shade) 42%, transparent) 11%, transparent 27%),
+  linear-gradient(to bottom, color-mix(in srgb, var(--shade) 50%, transparent) 0%, transparent 15%)}
+
+/* Company badge (top, start side) */
+.p-brand{position:absolute;top:20px;inset-inline-start:22px;z-index:5;display:flex;align-items:center;gap:11px;pointer-events:none;color:#fff;
+  background:var(--navy-a86);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding-block:7px;padding-inline:8px 16px}
+.p-brand img{width:38px;height:38px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.35);object-fit:contain}
+.p-brand b{display:block;font-size:15px;letter-spacing:.04em;font-weight:700;line-height:1.15}
+.p-brand span{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
+
+/* The one permanent disclosure (bottom, start side) */
+.p-disclosure{position:absolute;inset-inline-start:26px;bottom:22px;z-index:6;pointer-events:none;font-size:12px;font-weight:500;letter-spacing:.03em;
+  color:rgba(255,255,255,.92);background:var(--navy-a86);border:1px solid color-mix(in srgb, var(--gold) 55%, transparent);border-radius:999px;padding:5px 13px}
+.p-disclosure::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-inline-end:8px;vertical-align:1px}
+
+/* Lower-third caption during a tour */
+.p-caption{position:absolute;left:50%;bottom:64px;z-index:5;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;
+  opacity:0;animation:p-cap .7s cubic-bezier(.2,.7,.2,1) forwards}
+.p-caption b{display:block;font-size:22px;font-weight:650;letter-spacing:.01em;color:#fff;text-shadow:0 2px 14px rgba(5,8,15,.75),0 0 2px rgba(5,8,15,.6)}
+.p-caption b::after{content:"";display:block;width:44px;height:2px;background:var(--gold);margin:7px auto 6px}
+.p-caption span{display:block;font-size:12.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9);text-shadow:0 1px 10px rgba(5,8,15,.8)}
+@keyframes p-cap{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
+
+/* Opening and closing cards */
+.p-card{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 60% at 50% 46%, color-mix(in srgb, var(--navy) 86%, #fff 8%) 0%, var(--navy) 58%, var(--shade) 100%);color:#fff;text-align:center}
+.p-card img{height:min(34vh,340px);width:auto;max-width:70%;object-fit:contain}
+.p-card-rule{width:64px;height:2px;background:var(--gold);margin:26px 0 18px}
+.p-card-title{font-size:clamp(20px,2.6vw,34px);font-weight:600;letter-spacing:.06em}
+.p-card-sub{margin-top:12px;font-size:clamp(11px,1.05vw,14px);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+
+/* Tour progress line (grows from the start side) */
+.p-progress{position:absolute;left:0;right:0;bottom:0;height:2px;z-index:7;pointer-events:none}
+.p-progress div{height:100%;background:var(--gold);transform-origin:left center;transform:scaleX(0)}
+html[dir="rtl"] .p-progress div{transform-origin:right center}
+
+/* Control dock (bottom, end side): hides itself; ?clean=1 removes it for recording */
+.p-dock{position:absolute;inset-inline-end:22px;bottom:18px;z-index:9;display:flex;gap:6px;align-items:center;padding:7px;border-radius:14px;
+  background:var(--navy-a78);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  transition:opacity .35s ease, transform .35s ease}
+.p-dock.hide{opacity:0;transform:translateY(8px);pointer-events:none}
+.p-dock button,.p-dock select,.p-dock .p-lang{font:600 12px var(--font);color:#fff;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);border-radius:9px;padding:6px 11px;cursor:pointer;text-decoration:none;line-height:normal}
+.p-dock select{max-width:170px}
+.p-dock select option{color:#111}
+.p-dock button:hover:not(:disabled),.p-dock .p-lang:hover{background:rgba(255,255,255,.18)}
+.p-dock button.gold{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.p-dock button.gold:hover{background:color-mix(in srgb, var(--gold) 85%, #fff)}
+.p-dock button[aria-pressed="true"]{background:color-mix(in srgb, var(--gold) 22%, transparent);border-color:color-mix(in srgb, var(--gold) 70%, transparent);color:#fff}
+.p-dock-info{font-size:11.5px;color:rgba(255,255,255,.75);padding:0 6px;white-space:nowrap}
+.p-dock .p-lang{font-family:"Cairo","Inter",sans-serif}
+html[lang="ar"] .p-dock .p-lang{font-family:"Inter","Cairo",sans-serif}
+
+/* Labels in presentation mode: plates in the primary colour with an accent edge */
+.viewport.present .label-main{font-family:var(--font)}
+.viewport.present .label-room .label-main{font-size:11.5px;font-weight:600;letter-spacing:.04em;color:#fff;background:var(--navy-a78);padding:2px 9px;border-radius:6px}
+.viewport.present .label-office .label-main{font-size:12px;color:#fff;background:var(--navy);padding-block:3px;padding-inline:8px 10px;border-radius:6px;border-inline-start:3px solid var(--accent);
+  box-shadow:0 2px 8px rgba(5,8,15,.35)}
+.viewport.present .label-office .label-sub{color:#e8ecf5;background:var(--navy-a70);padding:1px 7px;border-radius:4px;margin-top:2px}
+.viewport.present .label-sign .label-main{font-size:12px;letter-spacing:.22em;color:var(--navy);background:var(--gold);padding:3px 11px;border-radius:4px;font-weight:700}
+.viewport.present .label-sign .label-sub{color:#fff;background:var(--navy-a78)}
+.viewport.present .label-employee .label-main{font-size:11.5px;color:var(--navy);background:#fff;border:1.5px solid var(--accent);padding:1px 9px;border-radius:999px;
+  box-shadow:0 2px 8px rgba(5,8,15,.4)}
+.viewport.present .label-employee::after{background:#fff;opacity:.8}
+.viewport.present .label[data-selected="true"] .label-main{outline:2px solid var(--gold);outline-offset:1px}
+.viewport.present button:focus-visible,.viewport.present select:focus-visible,.viewport.present .label:focus-visible,.viewport.present a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+/* Arabic has no capital letters and joined script: no letter spacing or upper-casing. */
+html[lang="ar"] .viewport.present *{letter-spacing:0 !important;text-transform:none !important}
+html[lang="ar"] .p-caption b{font-size:24px;font-weight:700}
+html[lang="ar"] .p-caption span{font-size:14px}
+html[lang="ar"] .p-brand b{font-size:16px}
+html[lang="ar"] .p-brand span{font-size:12.5px}
+
+/* Vertical capture frames: smaller badge and caption so nothing collides in a narrow frame */
+@media (max-aspect-ratio: 3/4){
+  .p-brand{top:16px;inset-inline-start:16px} .p-disclosure{inset-inline-start:16px;bottom:16px;font-size:11px}
+  .p-caption{bottom:58px;white-space:normal;width:86%} .p-caption b{font-size:19px} .p-caption span{font-size:11px}
+  .p-dock{inset-inline-end:12px;bottom:52px;flex-wrap:wrap;max-width:92%}
+}

@@ -1,0 +1,690 @@
+{
+ "licence": "CC0 1.0 \u2014 see public/vendor/kenney-furniture-kit/License.txt",
+ "material_count": 14,
+ "material_names": [
+  "_defaultMat",
+  "carpet",
+  "carpetBlue",
+  "carpetDarker",
+  "carpetWhite",
+  "glass",
+  "lamp",
+  "metal",
+  "metalDark",
+  "metalLight",
+  "metalMedium",
+  "plant",
+  "wood",
+  "woodDark"
+ ],
+ "model_count": 44,
+ "models": {
+  "bookcaseClosedWide": {
+   "max": [
+    0.8,
+    0.79,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.25
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/bookcaseClosedWide.glb",
+   "source_sha256": "55b9903e9646dc407ed5237a1c41c1f0a14f9edc22e3392bdb9a4804d846af6a"
+  },
+  "bookcaseOpen": {
+   "max": [
+    0.4,
+    0.88,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.25
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/bookcaseOpen.glb",
+   "source_sha256": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c"
+  },
+  "bookcaseOpenLow": {
+   "max": [
+    0.4,
+    0.4,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.25
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/bookcaseOpenLow.glb",
+   "source_sha256": "6d4d625faf977a2dbf155f1313cd32c6310e463114a1cd4c08cb9f80a5fb1d75"
+  },
+  "books": {
+   "max": [
+    0.15045,
+    0.1039,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.0945
+   ],
+   "primitives": 4,
+   "source_file": "public/vendor/kenney-furniture-kit/models/books.glb",
+   "source_sha256": "b8dc56e5d29f6fc1f4727fccb1b9642627fee9942c48060a00034e98df02701c"
+  },
+  "cabinetTelevision": {
+   "max": [
+    0.8,
+    0.31,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.25
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/cabinetTelevision.glb",
+   "source_sha256": "811719593d676ff76f7b5904d52c845ce0396af2bc9a6a2636c4818ead320b99"
+  },
+  "cardboardBoxClosed": {
+   "max": [
+    0.2125,
+    0.281,
+    0.0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.2125
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/cardboardBoxClosed.glb",
+   "source_sha256": "4af079dca52960912764574950f0549ff2ae1224b3db1528718629473a2d5d81"
+  },
+  "chairCushion": {
+   "max": [
+    0.2,
+    0.46,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.2
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/chairCushion.glb",
+   "source_sha256": "33544228984857f2cb502b58452fed72157335f9b1caf29e96da5c9094c53fdc"
+  },
+  "chairDesk": {
+   "max": [
+    0.33495,
+    0.6076,
+    0.0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.3143
+   ],
+   "primitives": 3,
+   "source_file": "public/vendor/kenney-furniture-kit/models/chairDesk.glb",
+   "source_sha256": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6"
+  },
+  "chairModernCushion": {
+   "max": [
+    0.2,
+    0.46,
+    0.0
+   ],
+   "min": [
+    0.0,
+    -0.0,
+    -0.2
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/chairModernCushion.glb",
+   "source_sha256": "245132697e633e907e2b48c86d56f6c8543604a3440a055d1c71c06ce11d2858"
+  },
+  "chairModernFrameCushion": {
+   "max": [
+    0.2,
+    0.46,
+    0.0
+   ],
+   "min": [
+    0.0,
+    -0.0,
+    -0.2
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/chairModernFrameCushion.glb",
+   "source_sha256": "fd3351b077cafbd54224e20fa7a3a1b4a4304019cf44c25a6e7709ad71b852b8"
+  },
+  "coatRackStanding": {
+   "max": [
+    0.1364,
+    0.77,
+    0.1364
+   ],
+   "min": [
+    -0.1364,
+    0.0,
+    -0.1364
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/coatRackStanding.glb",
+   "source_sha256": "d8231c22dab63ceb9fc8678f6c8ceafc62afa8726b51a73b4ce349043d3cdc91"
+  },
+  "computerKeyboard": {
+   "max": [
+    0.2822,
+    0.02756,
+    -0.0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.11819
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/computerKeyboard.glb",
+   "source_sha256": "9d9135789de2120e9f41ce3f0a56dd1b15f40adcc7888739bb842a2d820da322"
+  },
+  "computerMouse": {
+   "max": [
+    0.02485,
+    0.02357,
+    0.0
+   ],
+   "min": [
+    -0.02485,
+    0.0,
+    -0.0851
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/computerMouse.glb",
+   "source_sha256": "d3ad1a923f0f7707ef367bb969eb94c9076e211c98c830ba52e133fadc5cdfc0"
+  },
+  "computerScreen": {
+   "max": [
+    0.39269,
+    0.29429,
+    -0.0
+   ],
+   "min": [
+    -0.0,
+    -0.0,
+    -0.104
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/computerScreen.glb",
+   "source_sha256": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643"
+  },
+  "desk": {
+   "max": [
+    0.72448,
+    0.38441,
+    0.0123
+   ],
+   "min": [
+    -0.01,
+    0.0,
+    -0.38
+   ],
+   "primitives": 3,
+   "source_file": "public/vendor/kenney-furniture-kit/models/desk.glb",
+   "source_sha256": "0164fe828f028b321730fb8c74502e353583f751be74da1682d42fff7d3c5a42"
+  },
+  "kitchenBar": {
+   "max": [
+    0.43,
+    0.42,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.21
+   ],
+   "primitives": 3,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenBar.glb",
+   "source_sha256": "792c3d31e60c8a8d8c7a28cf7d1efe004c5a601adc1b163a8799dde32c1b559d"
+  },
+  "kitchenBarEnd": {
+   "max": [
+    0.10156,
+    0.42,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.21
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenBarEnd.glb",
+   "source_sha256": "410c6d83defe4ed248a8ec32f81553b56c8b610372d02ecf0e547e3f52cdc0a1"
+  },
+  "kitchenCabinet": {
+   "max": [
+    0.43,
+    0.45,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.45
+   ],
+   "primitives": 5,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenCabinet.glb",
+   "source_sha256": "7238c57778935ae25db5e57e9f7af3ba7068c71b005ff7cfbff3b6f3b1a13200"
+  },
+  "kitchenCoffeeMachine": {
+   "max": [
+    0.18954,
+    0.17749,
+    0.0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.24017
+   ],
+   "primitives": 3,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenCoffeeMachine.glb",
+   "source_sha256": "063f582c6fa0f00a9f24e3393dac2295491c4becdaf5513c893ab1a2826b6ec3"
+  },
+  "kitchenFridgeLarge": {
+   "max": [
+    0.52,
+    0.92,
+    0.06362
+   ],
+   "min": [
+    0.0,
+    -0.0,
+    -0.34193
+   ],
+   "primitives": 5,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenFridgeLarge.glb",
+   "source_sha256": "5851cc59c7e12f6f34a01a2ea93d5b9540be4078c1b703f517239fcede98fb32"
+  },
+  "kitchenMicrowave": {
+   "max": [
+    0.29,
+    0.18,
+    0.01
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.22
+   ],
+   "primitives": 6,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenMicrowave.glb",
+   "source_sha256": "dd6a6c919f4bebc6e2080fe419262cf97a0d6461ead3f3998aa3c9edf4d2bd27"
+  },
+  "kitchenSink": {
+   "max": [
+    0.43,
+    0.49,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.45
+   ],
+   "primitives": 8,
+   "source_file": "public/vendor/kenney-furniture-kit/models/kitchenSink.glb",
+   "source_sha256": "7b9610277d71f00dcf1bba49cf4d98d77ce5177e84bf76c7da2f8893e542f743"
+  },
+  "lampRoundFloor": {
+   "max": [
+    0.13602,
+    0.86,
+    0.02778
+   ],
+   "min": [
+    -0.01602,
+    0.0,
+    -0.14778
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/lampRoundFloor.glb",
+   "source_sha256": "50fe1b5b588edf15bfa9cc880f71a02a4fda6036350b24733d0ef4de5cc5e908"
+  },
+  "lampRoundTable": {
+   "max": [
+    0.13602,
+    0.31425,
+    0.02778
+   ],
+   "min": [
+    -0.01602,
+    0.0,
+    -0.14778
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/lampRoundTable.glb",
+   "source_sha256": "75bb644caaa3da003b4fcad7a931722dd61cd2858aab70cf660021d5061fa1b2"
+  },
+  "lampSquareFloor": {
+   "max": [
+    0.12,
+    0.86,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.12
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/lampSquareFloor.glb",
+   "source_sha256": "6466993748d8e184de9ec5b6b0af613867c50c0ce320d1898b1db9e4c27c2561"
+  },
+  "laptop": {
+   "max": [
+    0.264,
+    0.16181,
+    0.0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.24007
+   ],
+   "primitives": 3,
+   "source_file": "public/vendor/kenney-furniture-kit/models/laptop.glb",
+   "source_sha256": "5fa8a1f4a71ab8d82ef64da77a6973ffd350c6d4557516069a4ffd4bb8d808af"
+  },
+  "loungeChair": {
+   "max": [
+    0.49,
+    0.46,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.41
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/loungeChair.glb",
+   "source_sha256": "ddfe6bc4b3451bca61666d7b614552d6ed2a03d82fc76244b72ae3155874dc6c"
+  },
+  "loungeDesignChair": {
+   "max": [
+    0.7296,
+    0.4,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.41
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/loungeDesignChair.glb",
+   "source_sha256": "f0766a7d5698974b711adac18a2108f0e74e3a036fa4e4e0ccf91195b0ee5abf"
+  },
+  "loungeDesignSofa": {
+   "max": [
+    1.12,
+    0.4,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.41
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/loungeDesignSofa.glb",
+   "source_sha256": "b4f4e6850118e409da301df678228c703b6ac02e94fbb9dbde61543af817fa53"
+  },
+  "loungeSofa": {
+   "max": [
+    0.98,
+    0.46,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.41
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/loungeSofa.glb",
+   "source_sha256": "1886b811c0d3ad0d8525a4fd43adf4112c497c8e0ed906f06877ca3517f4c7dd"
+  },
+  "plantSmall2": {
+   "max": [
+    0.04733,
+    0.14,
+    0.04733
+   ],
+   "min": [
+    -0.04733,
+    0.0,
+    -0.04733
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/plantSmall2.glb",
+   "source_sha256": "d7c8ff42c66dd4f9238a73570549813d1ca6c5f6f661d7af9cb764c4fce314b9"
+  },
+  "pottedPlant": {
+   "max": [
+    0.10603,
+    0.65402,
+    0.12073
+   ],
+   "min": [
+    -0.10603,
+    0.0,
+    -0.12073
+   ],
+   "primitives": 3,
+   "source_file": "public/vendor/kenney-furniture-kit/models/pottedPlant.glb",
+   "source_sha256": "5b760eda2766f75fda36b2c5df652a1662f82981ef64cd8fa7fe7bcd386b3a15"
+  },
+  "rugRectangle": {
+   "max": [
+    1.57,
+    0.01,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.92
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/rugRectangle.glb",
+   "source_sha256": "a989d2d59c04e3071e0c90388b113a9a8f339ce1814ef984c51cb6dcd7c8e0eb"
+  },
+  "rugRound": {
+   "max": [
+    0.92,
+    0.01,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.92
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/rugRound.glb",
+   "source_sha256": "c4cdc8f51ed2dbfb853b147521ed40e995307392fd3b19045b2203ea50f376db"
+  },
+  "rugRounded": {
+   "max": [
+    1.57,
+    0.01,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.92
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/rugRounded.glb",
+   "source_sha256": "2ef5cc634bb1060a1a5774cfcaf6e11c235791c99d6b59da5fdbc09edfb95a68"
+  },
+  "sideTable": {
+   "max": [
+    0.52448,
+    0.38441,
+    0.01
+   ],
+   "min": [
+    -0.01,
+    0.0,
+    -0.21
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/sideTable.glb",
+   "source_sha256": "8227810584f7d37582e4e9ec821c56f1dc54b99c88a8dc74242ea3b7402bc472"
+  },
+  "sideTableDrawers": {
+   "max": [
+    0.52448,
+    0.38441,
+    0.0123
+   ],
+   "min": [
+    -0.01,
+    0.0,
+    -0.21
+   ],
+   "primitives": 6,
+   "source_file": "public/vendor/kenney-furniture-kit/models/sideTableDrawers.glb",
+   "source_sha256": "911145653c11b103b2c2e84f3d019205d1886186015c3b52aceddc3801ae8fdf"
+  },
+  "stoolBar": {
+   "max": [
+    0.26544,
+    0.435,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.22988
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/stoolBar.glb",
+   "source_sha256": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341"
+  },
+  "table": {
+   "max": [
+    0.84149,
+    0.32673,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.44737
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/table.glb",
+   "source_sha256": "ff1a94498d023957f4bc3ff6f55a7a82977d336dbf01a573b3364f03afe5ff61"
+  },
+  "tableCoffee": {
+   "max": [
+    0.2,
+    0.23,
+    0.1
+   ],
+   "min": [
+    -0.461,
+    -0.0,
+    -0.3
+   ],
+   "primitives": 1,
+   "source_file": "public/vendor/kenney-furniture-kit/models/tableCoffee.glb",
+   "source_sha256": "e38bea760fbd514efbb75528d09b4752c91af44677bbb97e6d4386c263525179"
+  },
+  "tableCoffeeGlassSquare": {
+   "max": [
+    -0.061,
+    0.23,
+    0.1
+   ],
+   "min": [
+    -0.461,
+    -0.0,
+    -0.3
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/tableCoffeeGlassSquare.glb",
+   "source_sha256": "e4a7ebef6ad0dbafee629df78b0edd88433a1059c4dd5fb3d70304ba2f71b945"
+  },
+  "tableGlass": {
+   "max": [
+    0.84149,
+    0.32673,
+    0
+   ],
+   "min": [
+    0.0,
+    0.0,
+    -0.44737
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/tableGlass.glb",
+   "source_sha256": "a5ed516d18b51cf5db3cc78f1403451f853a81db45510543d3ed56c1dd9c412b"
+  },
+  "televisionModern": {
+   "max": [
+    0.3424,
+    0.45475,
+    0.0642
+   ],
+   "min": [
+    -0.3424,
+    0.0,
+    -0.0642
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/televisionModern.glb",
+   "source_sha256": "d89519ad0a5f28b5b0dccb0d83209dccf610cda959578238dd21bbf9e219cfc6"
+  },
+  "trashcan": {
+   "max": [
+    0.10385,
+    0.42787,
+    0.12249
+   ],
+   "min": [
+    -0.10385,
+    -0.0,
+    -0.11164
+   ],
+   "primitives": 2,
+   "source_file": "public/vendor/kenney-furniture-kit/models/trashcan.glb",
+   "source_sha256": "e0ccc1fe50cbd05386477fdff527171d1cf7c0de2ba7ff3233f8d9561feb2561"
+  }
+ },
+ "output_bytes": 475644,
+ "output_file": "public/vendor/derived/office-furniture.glb",
+ "output_sha256": "119a6c4de531df5fe628fe23fa0315281fe485ba94ded421d83548b6116ae28d",
+ "primitive_count": 108,
+ "source_bytes_total": 498328,
+ "source_pack": "Kenney Furniture Kit 2.0 (CC0 1.0)",
+ "unit": "native Kenney units (pre-scale)"
+}
